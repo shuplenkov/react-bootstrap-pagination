@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { getPagination } from './utils/getPagination';
 import PageItem from './PageItem';
 
@@ -63,34 +64,34 @@ export default class Pagination extends React.Component {
 }
 
 Pagination.propTypes = {
-    totalPages: React.PropTypes.number.isRequired,
-    currentPage: React.PropTypes.number.isRequired,
-    ariaLabel: React.PropTypes.string,
-    size: React.PropTypes.string,
-    showMax: React.PropTypes.number,
-    activeClass: React.PropTypes.string,
-    defaultClass: React.PropTypes.string,
-    disabledClass: React.PropTypes.string,
-    threeDots: React.PropTypes.bool,
-    href: React.PropTypes.string,
-    pageOneHref: React.PropTypes.string,
-    prevNext: React.PropTypes.bool,
-    prevText: React.PropTypes.string,
-    nextText: React.PropTypes.string,
-    center: React.PropTypes.bool,
-    onClick: React.PropTypes.func,
-    activeBgColor: React.PropTypes.string,
-    activeBorderColor: React.PropTypes.string,
-    disabledBgColor: React.PropTypes.string,
-    disabledBorderColor: React.PropTypes.string,
-    bgColor: React.PropTypes.string,
-    borderColor: React.PropTypes.string,
-    activeColor: React.PropTypes.string,
-    disabledColor: React.PropTypes.string,
-    color: React.PropTypes.string,
-    circle: React.PropTypes.bool,
-    shadow: React.PropTypes.bool,
-    className: React.PropTypes.string
+    totalPages: PropTypes.number.isRequired,
+    currentPage: PropTypes.number.isRequired,
+    ariaLabel: PropTypes.string,
+    size: PropTypes.string,
+    showMax: PropTypes.number,
+    activeClass: PropTypes.string,
+    defaultClass: PropTypes.string,
+    disabledClass: PropTypes.string,
+    threeDots: PropTypes.bool,
+    href: PropTypes.string,
+    pageOneHref: PropTypes.string,
+    prevNext: PropTypes.bool,
+    prevText: PropTypes.string,
+    nextText: PropTypes.string,
+    center: PropTypes.bool,
+    onClick: PropTypes.func,
+    activeBgColor: PropTypes.string,
+    activeBorderColor: PropTypes.string,
+    disabledBgColor: PropTypes.string,
+    disabledBorderColor: PropTypes.string,
+    bgColor: PropTypes.string,
+    borderColor: PropTypes.string,
+    activeColor: PropTypes.string,
+    disabledColor: PropTypes.string,
+    color: PropTypes.string,
+    circle: PropTypes.bool,
+    shadow: PropTypes.bool,
+    className: PropTypes.string
 };
 
 Pagination.defaultProps = {
@@ -99,7 +100,6 @@ Pagination.defaultProps = {
     activeClass: 'active',
     disabledClass: 'disabled',
     showMax: 5,
-    center: false,
     size: 'md', // sm md lg
     prevNext: true,
     prevText: '⟨',
