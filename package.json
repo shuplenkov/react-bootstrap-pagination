@@ -1,14 +1,14 @@
 {
     "name": "@shuplenkov/react-bootstrap-4-pagination",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "A React component to render and manage Bootstrap 4 pagination quickly and easily",
     "main": "build/index.js",
     "peerDependencies": {
-        "react": "^17.0.0"
+        "react": ">=18.0.0"
     },
     "dependencies": {
         "prop-types": "^15.8.1",
-        "react": "^17.0.0",
+        "react": "^18.2.0",
         "webpack": "^4.43.0"
     },
     "scripts": {
